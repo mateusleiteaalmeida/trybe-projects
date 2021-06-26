@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Fake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top-bar">
+
+        <a href=""><img src="imgs/facebook-logo.png" alt="" class="facebook-logo"></a>
+
+        <form class="facebook-login">
+
+            <div class="form-group">
+                <label id="user-email-phone-label" class="user-email-phone-label" for="">Email ou telefone</label>
+                <input id="user-email-phone" type="text" name="">
+            </div>
+
+            <div class="form-group">
+                <label id="user-password-label" class="user-password-label" for="">Senha</label>
+                <input id="user-password" type="password" name="">
+            </div>
+
+            <div class="form-control">
+                <button id="button-login">Entrar</button>
+            </div>
+        </form>
+
+    </header>
+
+    <div class="main-content">
+        <div class="left-content">
+            <p id="facebook-slogan" class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img id="facebook-networking" src="imgs/networking.png">
+        </div>
+        <div class="right-content" id="right-content-create">
+            <h1>Abra uma conta</h1>
+            <p class="quick-easy">É rápido e fácil.</p>
+            <form name="user-create" class="user-create">
+                <div class="username">
+                <input required class="user-create-first create-form greetings" type="text" name="firstname" placeholder="Nome">
+                <input required class="user-create-last create-form greetings" type="text" name="lastname" placeholder="Sobrenome">
+                </div>
+                <input required class="user-phone create-form greetings" type="text" name="phone_email" placeholder="Celular ou email">
+                <input required class="user-new-password create-form" type="password" name="password" placeholder="Nova senha">
+                <label id="label-birthdate" for="birthdate" class="label-birthdate">Data de nascimento</label>
+                <input required class="user-birthdate create-form greetings" type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+                <label id="label-gender" class="label-gender">Gênero</label>
+                    <div class="genders">
+                    <input required type="radio" class="genders create-form" id="female" name="gender" value="Feminino">
+                    <label for="female">Feminino</label>
+                    <input required type="radio" class="genders create-form" id="male" name="gender" value="Masculino">
+                    <label for="male">Masculino</label>
+                    <input required type="radio" class="genders create-form" id="custom" name="gender" value="Personalizado">
+                    <label for="custom">Personalizado</label>
+                </div>
+                <input  type="text" name="gender-custom" id="custom-gender-text"  placeholder="Gênero (opcional)">
+                <button id="facebook-register" class="facebook-register" type="submit" value="Validate">Cadastre-se</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
